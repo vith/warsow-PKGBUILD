@@ -24,7 +24,7 @@ source=('warsow.launcher'
 md5sums=('003f8a0974f0cd5c2b9e78d49cab24c9'
          '45a3f846fd6ea3b7dc857e60501d0e12'
          '13d520525638c544565d8f799ffdca48'
-         '41885946e562012582761af5485e6801')
+         '56c02b5e9bd6f921fbc980e868c2b48d')
 
 prepare() {
   gendesk -n -f --pkgname 'warsow' --pkgdesc "${pkgdesc}" --name 'Warsow' --categories 'Game;ActionGame'

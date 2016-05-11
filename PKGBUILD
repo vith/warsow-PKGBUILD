@@ -8,6 +8,7 @@ url='https://www.warsow.gg/'
 license=('GPL')
 arch=('i686' 'x86_64')
 depends=('warsow-data')
+makedepends=('gendesk')
 provides=('warsow')
 conflicts=('warsow')
 source=('warsow.launcher'

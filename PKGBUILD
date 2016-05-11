@@ -55,6 +55,8 @@ package_warsow-client() {
 }
 
 package_warsow-server() {
+   install=warsow-server.install
+
    local builddir="$srcdir/warsow_${_pkgver}_sdk/source/source/build"
 
    # Install server libs

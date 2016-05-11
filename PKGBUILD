@@ -9,7 +9,6 @@ license=('GPL')
 arch=('i686' 'x86_64')
 depends=('warsow-data')
 makedepends=('gendesk' 'cmake' 'libjpeg' 'sdl2' 'libvorbis')
-provides=('warsow')
 conflicts=('warsow')
 source=('warsow.launcher'
         'wsw-server.launcher'

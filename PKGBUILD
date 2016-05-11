@@ -51,6 +51,9 @@ package_warsow-client() {
 package_warsow-server() {
    local builddir="$srcdir/warsow_${_pkgver}_sdk/source/source/build"
 
+   # Install server libs
+   install -D "$builddir/libs/libangelwrap_x86_64.so" "$pkgdir/opt/warsow/libs/libangelwrap_x86_64.so"
+
    # Install binaries to /opt/warsow
    install -Dm0775 "$builddir/wsw_server.$CARCH" "$pkgdir/opt/warsow/wsw_server"
    install -Dm0755 "$builddir/wswtv_server.$CARCH" "$pkgdir/opt/warsow/wswtv_server"

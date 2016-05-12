@@ -5,11 +5,10 @@ After=network.target
 [Service]
 User=warsow
 Group=warsow
-ExecStart=/opt/warsow/wsw_server
+ExecStart=/usr/bin/wsw-server
 WorkingDirectory=/var/lib/warsow
 
 Restart=on-failure
-PrivateTmp=false
 
 [Install]
 WantedBy=multi-user.target

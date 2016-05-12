@@ -61,6 +61,7 @@ package_warsow-server() {
 
    # Install server libs
    install -D "$builddir/libs/libangelwrap_x86_64.so" "$pkgdir/opt/warsow/libs/libangelwrap_x86_64.so"
+   install -D "$builddir/libs/libsteamlib_x86_64.so" "$pkgdir/opt/warsow/libs/libsteamlib_x86_64.so"
 
    # Install binaries to /opt/warsow
    install -Dm0775 "$builddir/wsw_server.$CARCH" "$pkgdir/opt/warsow/wsw_server"
